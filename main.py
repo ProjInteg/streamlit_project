@@ -25,7 +25,7 @@ def plot_vendas(dataframe, categoria):
     ax.set_title(f'Quantidade de vendas de  {categoria}', fontsize=18)
     ax.set_xlabel('Produto', fontsize=14)
     plt.ylim(0, 6)
-    ax.tick_params(rotation=25, axis='x')
+    ax.tick_params(rotation=15, axis='x')
     ax.set_ylabel('Quantidade', fontsize=14)
 
     return fig
