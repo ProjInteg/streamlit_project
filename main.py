@@ -35,7 +35,21 @@ vendas = pd.read_excel('bd_vendas.xlsx') #, on_bad_lines='skip', encoding="latin
 st.title('Quantidades de Produtos vendidos por Categoria\n')
 st.write('Período de jun/2017 a ago/2018')
 
+# filtro para tabela
+opcao_1 = st.sidebar.checkbox('Mostrar tabela')
+if opcao_1:
+    st.sidebar.markdown('## Filtro para a tabela')
 
+    categorias = list(vendas['Categoria'].unique())
+    categorias.append('Todas')
+
+    categoria = st.sidebar.selectbox('Selecione a catedoria para apresentar a tabela', options=categorias)
+
+    if categoria != 'Todas':
+        vendas_categoria = vendas.query('Categoria == @categoria')
+        mostrar_linhas(vendas_categoria)
+    else:
+        mostrar_linhas(vendas)
 
 # filtro para o gráfico
 st.sidebar.markdown('## Filtro para o gráfico')

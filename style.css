@@ -1,3 +1,10 @@
+:root {
+    --cor0: #FAF3D5;
+    --cor1: #DEDABD;
+    --cor2: #f1f1ed;
+    --cor3: #D2DEBD;
+    --cor4: #E0FAD5;
+}
 
 
 #MainMenu {
@@ -8,6 +15,19 @@
 .stMarkdown {
     text-align: center;
 }
+
+.css-1y4p8pa {
+    background-color: var(--cor0);
+}
+
+.css-uf99v8, .css-18ni7ap {
+    background-color: var(--cor2);
+}
+
+.css-6qob1r  {
+    background-color: var(--cor1);
+}
+
 
 footer {
     visibility: hidden;
