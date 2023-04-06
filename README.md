@@ -9,6 +9,8 @@
 <li>pandas</li>
 <li>numpy</li>
 <li>openpyxl</li>
-<li>seaborn</li>
-<li>matplotlib</li>
+<li>plotly_express</li>
 </ul>
+
+<p>Visualização</p>
+https://projinteg-streamlit-project-main-hu0ecj.streamlit.app/
